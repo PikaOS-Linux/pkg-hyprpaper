@@ -5,7 +5,7 @@ Maintainer: ferrreo <harderthanfire@gmail.com>
 Standards-Version: 4.6.1
 Build-Depends: debhelper-compat (= 13),
                build-essential,
-               ninja,
+               ninja-build,
                cmake-extras,
                cmake,
                wayland-protocols,
