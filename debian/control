@@ -1,19 +1,22 @@
-Source: upstream-name
-Section: admin
+Source: hyprpaper
+Section: main
 Priority: optional
-Maintainer: name <email>
+Maintainer: ferrreo <harderthanfire@gmail.com>
 Standards-Version: 4.6.1
-Build-Depends: debhelper-compat (= 13)
+Build-Depends: debhelper-compat (= 13),
+               build-essential,
+               ninja,
+               cmake-extras,
+               cmake,
+               wayland-protocols,
+               libwayland-dev,
+               libegl-dev,
+               libgles2,
+               libegl1-mesa-dev,
 Rules-Requires-Root: no
 
-Package: pkgname1
+Package: hyprpaper
 Architecture: linux-any
-# Delete any of these lines if un-used
-Depends: ${misc:Depends}, depends
-Recommends: high priority optdepends
-Conflicts: conflicts
-Suggests: low priority optdepends
-Breaks: also conflicts!?
-Provides: provides
-#
-Description: pkgdesc
+Depends: ${misc:Depends},
+Provides: hyprpaper
+Description: Wallpaper changer for hyprland
