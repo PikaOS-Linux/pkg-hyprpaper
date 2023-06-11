@@ -68,7 +68,7 @@ pkgdir = $(srcdir)/debian/hyprpaper
 override_dh_auto_install:
 			 make install
 			 mkdir -p $(pkgdir)/usr/bin
-			 cp .build/hyprpaper $(pkgdir)/usr/bin/hyprpaper
+			 cp $(srcdir)/.build/hyprpaper $(pkgdir)/usr/bin/hyprpaper
 
 
 ## === End end of region ===
