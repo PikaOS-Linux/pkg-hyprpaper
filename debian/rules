@@ -77,4 +77,4 @@ pkgdir2 = $(srcdir)/debian/pkgdir2
 
 ## This here will start the build:
 %:
-	dh $@
+	dh $@ --buildsystem=Makefile
