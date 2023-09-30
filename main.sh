@@ -3,10 +3,9 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-git clone --recurse-submodules https://github.com/hyprwm/hyprpaper
-cd hyprpaper
-git checkout v0.3.0
-cp -rvf ../debian ./
+git clone --recurse-submodules https://github.com/hyprwm/hyprpaper -b v0.4.0
+cp -rvf ./debian ./hyprpaper/
+cd ./hyprpaper
 
 # Get build deps
 apt-get build-dep ./ -y
