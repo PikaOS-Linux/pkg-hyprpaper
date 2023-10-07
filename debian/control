@@ -17,6 +17,7 @@ Build-Depends: debhelper-compat (= 13),
                libpango1.0-dev,
                libpangocairo-1.0-0,
                libcairo-dev,
+               libmagic-dev,
                libjpeg-dev,
 Rules-Requires-Root: no
 
